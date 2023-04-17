@@ -3,6 +3,7 @@ import Dashboard, {dashboardloader} from "./pages/Dashboard"
 import Main, { mainloader} from "./layouts/Main"
 import Error from "./pages/Error"
 import logoutaction from "./actions/logouts"
+import { ToastContainer } from "react-toastify"
 const router = createBrowserRouter([
     {
     path: "/",
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
         {
             path:"logout",
             action: logoutaction,
-
+            //what function sould run when you go in this route
         }
     ]
 },
@@ -35,6 +36,7 @@ const App = () => {
         <>
         <div className={"App"}>
         <RouterProvider router={router} />
+        <ToastContainer />
         </div>
         </>
     );

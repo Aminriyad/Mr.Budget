@@ -12,8 +12,9 @@ const Nav = ({userName}) => {
              <img src={logomark} alt="" height={30} />
              <span>Home Budget</span>
             </NavLink>
-            {
-            userName && (
+            {/* This is the delete use button */}
+            { 
+            userName &&  (
                 <Form
                 method='post'
                 action="/logout"

@@ -15,7 +15,7 @@ const Main = () => {
         <div className={"layout"}>
         <Nav userName={userName}/>
         <main>
-        <Outlet /> {/* AKA childern */}
+        <Outlet /> {/* AKA childern that are passes all in app.tsx */}
         </main>
         {userName}
         <img src={wave} alt="" />
