@@ -1,9 +1,10 @@
-import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import {createBrowserRouter,  RouterProvider} from "react-router-dom"
 import Dashboard, {dashboardloader} from "./pages/Dashboard"
 import Main, { mainloader} from "./layouts/Main"
 import Error from "./pages/Error"
 import logoutaction from "./actions/logouts"
-import { ToastContainer } from "react-toastify"
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'; 
 const router = createBrowserRouter([
     {
     path: "/",
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         {
             path:"logout",
             action: logoutaction,
-            //what function sould run when you go in this route
+            //what function should run when you go in this route
         }
     ]
 },
@@ -36,7 +37,7 @@ const App = () => {
         <>
         <div className={"App"}>
         <RouterProvider router={router} />
-        <ToastContainer />
+        <ToastContainer draggable/> {/* To get it in all of the routes */}
         </div>
         </>
     );

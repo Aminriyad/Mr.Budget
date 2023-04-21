@@ -4,7 +4,7 @@ import logomark from '../assests/logomark.svg'
 import { TrashIcon } from '@heroicons/react/24/solid'
 
 const Nav = ({userName}) => {
-    return ( 
+    return (
         <nav>
             <NavLink
             to="/"

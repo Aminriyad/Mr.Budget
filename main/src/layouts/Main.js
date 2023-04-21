@@ -1,5 +1,5 @@
 //helper functions
-import { Outlet, useLoaderData } from "react-router";
+import { Outlet, useLoaderData } from "react-router-dom";
 import { fetchData } from "../helpers";
 
 //Components
