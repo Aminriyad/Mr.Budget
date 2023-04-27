@@ -1,11 +1,13 @@
 import {redirect} from "react-router-dom"
 import { toast } from "react-toastify"
 
-import deleteItem from "../helpers"
+import {deleteItem} from "../helpers"
 
 const logoutaction = async () =>{
     //delete the user
     deleteItem({key:"userName"})
+    deleteItem({key:"budgets"})
+    deleteItem({key:"expenses"})
     /* 1. Delete so user don't exist in their LocalStorage */
     toast.success("you've deleted your account")
     /* 2. show them a sign on the the top-left corner that they have logged out */

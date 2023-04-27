@@ -17,7 +17,6 @@ const Main = () => {
         <main>
         <Outlet /> {/* AKA childern that are passes all in app.tsx */}
         </main>
-        {userName}
         <img src={wave} alt="" />
         </div>
     );

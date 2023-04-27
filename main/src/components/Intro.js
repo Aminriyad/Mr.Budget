@@ -10,8 +10,7 @@ const Intro = () => {
                     <span className="accent"> Your Money </span>
                     </h1>
                     <p>Personal budgeting is the secret to financial freedom. Start your journey today.</p>
-                    <Form
-                    method="post">
+                    <Form method="post">
                         <input
                         type="text"
                         name='userName'
@@ -20,6 +19,7 @@ const Intro = () => {
                         autoComplete='given-name' //auto name in device
                         required //required to be completed
                         />
+                        <input type="hidden" name="_action" value="newUser" />
                         <button type='submit' className='btn btn--dark'>
                             <span>Create Account</span>
                             <UserPlusIcon width={20}/>
